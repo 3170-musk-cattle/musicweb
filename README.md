@@ -12,6 +12,11 @@ To run the code on your machine, we recommand you to create a anaconda environme
 conda create -n 3170MC-web -f environments.yaml
 ```
 
+Or, alternatively, you can use `pip` to config your environment:
+```bash
+pip install -r packages.txt
+```
+
 Futhermore, make sure you have a vue environment on your machine.
 
 ### Run the back-end programmes
