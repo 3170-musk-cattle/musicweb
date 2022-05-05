@@ -1,5 +1,7 @@
-# web-project
+# Music Cultural Community Management System (MCCMS)
 
+## Overview
+CSC3170 course project.
 
 
 ## User Guide
