@@ -6,8 +6,9 @@
     </div>
     <el-table
       :data="artistData"
-      style="width: 400px">
-      <el-table-column prop="fields.name" label="Artist Name" width="200px"></el-table-column>
+      style="width: 1000px">
+      <el-table-column width="50px"></el-table-column>
+      <el-table-column prop="fields.name" label="Artist Name" width="400px"></el-table-column>
       <el-table-column label="Operations" width="100px" fixed="right">
         <template slot-scope="scope">
           <el-button @click="operationRow(scope.row)" type="danger" icon="el-icon-delete" circle></el-button>
