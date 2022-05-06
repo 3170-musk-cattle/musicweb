@@ -8,7 +8,7 @@
     >
       <el-submenu index="1">
         <template slot="title">
-          <i class="el-icon-location"></i>
+          <i class="el-icon-menu"></i>
           <span>User</span>
         </template>
         <el-menu-item-group>
@@ -20,17 +20,17 @@
       </el-submenu>
       <el-submenu index="2">
         <template slot="title">
-          <i class="el-icon-menu"></i>
+          <i class="el-icon-headset"></i>
           <span>Songs</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="21">Add Artist</el-menu-item>
+          <el-menu-item index="21" @click="editArtists">Add Artist</el-menu-item>
         </el-menu-item-group>
         <el-menu-item-group>
           <el-menu-item index="22">Add Album</el-menu-item>
         </el-menu-item-group>
         <el-menu-item-group>
-          <el-menu-item index="23">Add Song</el-menu-item>
+          <el-menu-item index="23" @click="addSongs">Add Song</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
     </el-menu>
@@ -39,6 +39,7 @@
 
 <script>
 export default {
+  name: 'aside',
   data () {
     return {}
   },
@@ -48,6 +49,12 @@ export default {
     },
     handleClose (key, keyPath) {
       console.log(key, keyPath)
+    },
+    editArtists () {
+      this.$router.push('/admin/artists')
+    },
+    addSongs () {
+      this.$router.push('/admin/songs_file')
     }
   }
 }

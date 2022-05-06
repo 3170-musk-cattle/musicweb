@@ -6,7 +6,7 @@
     </div>
     <el-table
       :data="songData"
-      style="width: 800px">
+      style="width: 1000px">
       <el-table-column prop="fields.artist" label="Artist" width="100px"></el-table-column>
       <el-table-column prop="fields.name" label="Song Name" width="200px"></el-table-column>
       <el-table-column prop="fields.album" label="Album" width="200px"></el-table-column>
