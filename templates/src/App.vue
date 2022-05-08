@@ -48,7 +48,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: pink;
+  background-color: white;
 }
 .el-header{
   position: relative;
@@ -56,7 +56,7 @@ export default {
   height: 120px;
   line-height: 60px;
   color: cornsilk;
-  background-color: blue;
+  background-color: steelblue;
 }
 /*.el-header, .el-footer {*/
 /*  background-color: #B3C0D1;*/
@@ -67,7 +67,7 @@ export default {
 
 .el-aside {
   position: relative;
-  background-color: orange;
+  background-color: gray;
   color: #333;
   text-align: center;
   height: auto;
