@@ -9,6 +9,7 @@ import Chart from "../views/ChartView.vue";
 import Card from "../views/CardView.vue";
 import Blank from "../views/BlankView.vue";
 import NotFound from "../views/NotFound.vue";
+import Artists from "../views/Artists.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -26,6 +27,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/forms",
     name: "Forms",
     component: Forms,
+  },
+  {
+    path: "/artists",
+    name: "Artists",
+    component: Artists,
   },
   {
     path: "/cards",

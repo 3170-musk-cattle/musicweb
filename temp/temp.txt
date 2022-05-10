@@ -1,0 +1,203 @@
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Czech',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Czech Philharmonic Orchestra',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Czech/Gavin/Lindsey',
+  type: 'Group',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'DJ Project',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'DJ Project/Giulia/Huiban Gabriel',
+  type: 'Group',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Feint',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Feint/Leah Rye/Rameses B',
+  type: 'Group',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Flipsyde',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Flipsyde/t.A.T.u.',
+  type: 'Group',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Flo Rida',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Flo Rida/Robin Thicke/Verdine White',
+  type: 'Group',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Flo Rida/Sage the Gemini',
+  type: 'Group',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Flo Rida/Wynter Gordon',
+  type: 'Group',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Gavin',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Gavin Greenaway',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Giulia',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Greyson Chance',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Huiban Gabriel',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Leah Rye',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Lindsey',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Lindsey Stirling',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Rameses B',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Robin Thicke',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Sage the Gemini',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Selena Gomez & The Scene',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Verdine White',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Wynter Gordon',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 'Yael Naïm',
+  type: 'Individual',
+},
+
+{
+  picture:
+    '../img/logo.png',
+  name: 't.A.T.u.',
+  type: 'Individual',
+},

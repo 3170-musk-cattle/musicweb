@@ -111,6 +111,8 @@ def show_artists(request):
         artists = Artists.objects.filter().order_by('name')
         print(serializers.serialize('json', artists))
         response['list'] = json.loads(serializers.serialize('json', artists))
+        # for key, item in response.items():
+        #     item[]
         response['msg'] = 'success'
         response['err_num'] = 0
     except Exception as e:
