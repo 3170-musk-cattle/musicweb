@@ -3,6 +3,43 @@
 ## Overview
 CSC3170 course project.
 
+### TODOs (Oxygen-ver)
+
+- [ ] django back-end environment
+- back-end apis
+  - [ ] show all artists
+  - [ ] show all songs 
+  - [ ] show all albums
+  - [ ] show all users
+  - [ ] add artist
+  - [ ] add albums
+  - [ ] add songs
+  - [ ] add user
+  - [ ] show/edit singer
+    - [ ] plugin: show number of fans
+    - [ ] plugin: show fans sex rate
+    - [ ] plugin: show distribution of age range of fans
+    - [ ] plugin: show locational distribution of fans
+  - [ ] show/edit album
+    - [ ] adding new songs
+  - [ ] show/edit song
+    - [ ] plugin: show emotion
+  - [ ] show/edit user
+    - [ ] Show playlists
+  - [ ] show/edit playlist/ranklist
+  - [ ] recommend api
+- [ ] vue front-end environment
+- front-end
+  - [ ] basic admin layout
+  - [ ] charts, graphs slots
+  - [ ] search-by-name request (general-(songs, albums, artists, users), specific) 
+  - [ ] multiline request
+- [ ] DataBase
+- SQL queries
+  - [ ] add/delete queries
+  - [ ] modify queries
+  - [ ] State quiries
+  - [ ] robust search queries
 
 ## User Guide
 
@@ -11,7 +48,7 @@ And the applied database is `MySQL Ver 8.0.28-0ubuntu0.20.04.3 for Linux on x86_
 
 To run the code on your machine, we recommand you to create a anaconda environment by running:
 ```bash
-conda create -n 3170MC-web -f environments.yaml
+conda create -n MCCMC-web -f environments.yaml
 ```
 
 Or, alternatively, you can use `pip` to config your environment:
