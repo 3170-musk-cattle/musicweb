@@ -1,8 +1,17 @@
 from django.db import models
-from oxygen.constants import prov_choices
 
 # Create your models here.
 #
+
+prov_choices = [
+    ('AH', 'Anhui'),
+    ('BJ', 'Beijing'),
+    ('FJ', 'Fujian'),
+    ('GS', 'Gansu'),
+    ('GD', 'Guangdong'),
+    ('LN', 'Liao Ning'),
+]
+
 class Songs(models.Model):
     name = models.CharField(max_length=511)
     genre = models.ForeignKey('Genres', on_delete=models.SET_NULL, null=True, blank=True)
@@ -74,7 +83,9 @@ class Users(models.Model):
         ], default='N'
     )
     location = models.CharField(
-
+        max_length=20,
+        choices=prov_choices,
+        default='GD'
     )
     email_address = models.EmailField(unique=True, primary_key=True)
     like_songs = models.ForeignKey(PlayLists, on_delete=models.PROTECT)
@@ -92,7 +103,7 @@ class ArtistInGroup(models.Model):
 class UserPlaysMusic(models.Model):
     user_id = models.ForeignKey('Users', on_delete=models.CASCADE)
     song_id = models.ForeignKey('Songs', on_delete=models.CASCADE)
-    last_time = models.DateTimeField()
+    last_time = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         unique_together = ('user_id', 'song_id')
@@ -116,6 +127,19 @@ class UserLikePlaylist(models.Model):
 
     class Meta:
         unique_together = ('list_id', 'user_id')
+
+class UserIsFanOf(models.Model):
+    user_id = models.ForeignKey('Users', on_delete=models.CASCADE)
+    artist_id = models.ForeignKey('Artists', on_delete=models.CASCADE)
+    add_time = models.DateTimeField(auto_created=True)
+    class Meta:
+        unique_together = ('user_id', 'artist_id')
+    
+class Reviews(models.Model):
+    user_id = models.ForeignKey('Users', on_delete=models.SET_NULL, null=True, blank=True)
+    song_id = models.ForeignKey('Songs', on_delete=models.CASCADE)
+    comment = models.TextField(max_length=2047)
+    comment_date = models.DateTimeField(auto_created=True)
 
 
 
