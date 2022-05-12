@@ -208,8 +208,8 @@
         </router-link>
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"
-          :class="[$route.name === 'Chart' ? activeClass : inactiveClass]"
-          to="/charts"
+          :class="[$route.name === 'OxygenTest' ? activeClass : inactiveClass]"
+          to="/test"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -221,7 +221,7 @@
             <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
           </svg>
 
-          <span class="mx-4">Charts</span>
+          <span class="mx-4">OxygenTest</span>
         </router-link>
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200 border-l-4"

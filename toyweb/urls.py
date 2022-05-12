@@ -21,5 +21,6 @@ from . import views
 urlpatterns = [
     path('', views.index_page),
     path('admin/', admin.site.urls),
-    path('api/', include('hydrogen.urls'))
+    path('api/', include('hydrogen.urls')),
+    path('req/', include('oxygen.urls'))
 ]

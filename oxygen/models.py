@@ -1,16 +1,9 @@
 from django.db import models
-
+from oxygen.constants import prov_choices
 # Create your models here.
 #
 
-prov_choices = [
-    ('AH', 'Anhui'),
-    ('BJ', 'Beijing'),
-    ('FJ', 'Fujian'),
-    ('GS', 'Gansu'),
-    ('GD', 'Guangdong'),
-    ('LN', 'Liao Ning'),
-]
+
 
 class Songs(models.Model):
     name = models.CharField(max_length=511)
@@ -78,14 +71,14 @@ class Users(models.Model):
         max_length=2,
         choices=[
             ('M', 'Male'), 
-            ('F', 'Female')
+            ('F', 'Female'),
             ('N', 'Unknown')
         ], default='N'
     )
     location = models.CharField(
         max_length=20,
         choices=prov_choices,
-        default='GD'
+        default='++'
     )
     email_address = models.EmailField(unique=True, primary_key=True)
     like_songs = models.ForeignKey(PlayLists, on_delete=models.PROTECT)
